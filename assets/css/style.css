@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-background: #fff;
+    --black-background: #1f2328;
+    --text-title: #1f2328;
+    --text-paragraph: #6d757e;
+    --text-width: 280px;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-y: scroll;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.main {
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+}
+
+.wrapper {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header__user-name-avt {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header__user-name-wrapper {
+    color: var(--text-title);
+    margin-top: 12px;
+    text-align: center;
+}
+
+.header__user-name {
+    font-size: 2rem;
+}
+
+.header__nickname {
+    font-size: 1.8rem;
+}
+
+.header__my-bio {
+    font-size: 1.3rem;
+    color: var(--text-paragraph);
+    width: var(--text-width);
+    margin-top: 6px;
+}
+
+.header__my-bio-item {
+    margin-right: 4px;
+    line-height: 2rem;
+}
+
+/* Container */
+.container__title {
+    font-size: 1.8rem;
+    color: var(--text-title);
+    font-weight: 600;
+}
+
+.container__my-social-network-item {
+    margin: 10px 0;
+    list-style: none;
+    padding: 8px 20px 2px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.container__my-social-network-item:hover {
+    opacity: 0.9;
+}
+
+.container__my-social-network-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.container__social-network-icon {
+    --size-photo-icon: 42px;
+    width: var(--size-photo-icon);
+    height: var(--size-photo-icon);
+}
+
+.container__social-network-name {
+    font-size: 1.8rem;
+    color: var(--text-title);
+    line-height: 4.8rem;
+    padding-left: 10px;
+}
+
+.container__download-qrcode-btn {
+    padding: 14px 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    margin: 10px 0;
+    color: var(--white-background);
+    background: var(--black-background);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.container__download-qrcode-btn:hover {
+    opacity: 0.9;
+}
+
+.container__download-qrcode-btn i {
+    padding-right: 8px;
+    font-size: 1.6rem;
+}
+
+/* Responsive */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .main {
+        width: 600px;
+    }
+}
+
+@media (max-width: 739px) {
+    .main {
+        width: 320px;
+    }
+}
