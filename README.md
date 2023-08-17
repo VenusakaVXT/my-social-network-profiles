@@ -15,19 +15,19 @@ In addition, I have written a rule specifically for the Gmail and Bank Account b
  if (nameValue === 'Gmail') {
     navigator.clipboard.writeText(myGmail)
         .then(() => {
-             alert(`Đã sao chép ${myGmail} vào bộ nhớ tạm`);
+             alert(`Copied ${myGmail} to clipboard`);
         })
         .catch(err => {
-             console.error('Lỗi khi sao chép vào bộ nhớ tạm:', err);
+             console.error('Error copying to clipboard:', err);
         });
 }
 if (nameValue === 'Bank account') {
      navigator.clipboard.writeText(myBankAccount)
          .then(() => {
-              alert(`Đã sao chép ${myBankAccount} vào bộ nhớ tạm`);
+              alert(`Copied ${myBankAccount} to clipboard`);
          })
          .catch(err => {
-              console.error('Lỗi khi sao chép vào bộ nhớ tạm:', err);
+              console.error('Error copying to clipboard:', err);
          });
 }
 ```
