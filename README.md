@@ -35,5 +35,5 @@ But this **navigator.clipboard.writeText()** method is not applicable to all bro
 
 ![image](https://github.com/VenusakaVXT/my-social-network-profiles/assets/125566811/69ee6536-016a-4c45-9515-97891cf0b469)
 
-So often this obstacle will be encountered in mobile browsers linked through social networks such as Facebook, Instagram, Messenger, ....
+So often this obstacle will be encountered in mobile browsers linked through social networks such as Facebook, Instagram, Zalo, ....
 
